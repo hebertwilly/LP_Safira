@@ -1,3 +1,12 @@
+ const elementos = document.querySelectorAll('.refresh-animate');
+  function animarElementos() {
+    elementos.forEach(elemento => {
+      // Adiciona a classe de animação
+      elemento.classList.add('animar');
+    });
+  }
+window.addEventListener('load', animarElementos);
+
 document.addEventListener('DOMContentLoaded', () => {
   const REDIRECT_URL = '/planos.html';
   const iframe  = document.getElementById('vimeo-player');
