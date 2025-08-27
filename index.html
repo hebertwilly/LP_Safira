@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Os 21 Códigos Secretos da Prosperidade</title>
+
+  <!-- Tailwind (ok p/ dev; em prod faça build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="min-h-[100dvh] flex flex-col items-center bg-cosmos text-white antialiased">
+    <main class="max-[1023px]:my-auto">
+        <!-- HERO -->
+        <header class="pt-10 md:pt-14">
+            <div class="mx-auto max-w-[1160px] px-4 sm:px-4 text-center">
+                <h1 class="font-extrabold leading-[1.08] tracking-tight text-center">
+                    <span class="title-exato block text-[clamp(34px,5.6vw,64px)]">
+                        Os 21 Códigos Secretos
+                    </span>
+                    <span class="title-exato block mt-1 text-[clamp(34px,5.6vw,64px)]">
+                        da Prosperidade
+                    </span>
+                </h1>
+
+                <div class="mt-6 md:mt-8">
+                <span class="inline-block px-4 py-2 rounded-md text-[15px] sm:text-base font-bold
+                            text-yellow-500 ring-1 ring-fuchsia-300/30">
+                    Em 21 Dias
+                </span>
+                </div>
+
+                <p class="mt-5 sm:mt-5 max-w-[820px] mx-auto text-slate-300/95 text-base font-semibold sm:text-lg">
+                    Transforme sua relação com a abundância e desperte seu potencial próspero
+                </p>
+                <p class="mt-5 sm:mt-5 max-w-[820px] text-yellow-500 mx-auto text-base sm:text-base blink-soft">
+                    Atenção fique até o final do video para transformar sua vida !!!
+                </p>         
+            </div>
+        </header>
+
+        <!-- PLAYER -->
+        <section class="mt-10 sm:mt-10">
+            <div class="mx-auto max-w-[980px] px-4 sm:px-6">
+                <div class="mx-auto w-full max-w-[1050px] rounded-xl overflow-hidden player-surface">
+                <div class="aspect-video relative">
+                    <!-- OVERLAY -->
+                    <div id="vimeo-unmute" class="flex items-end absolute inset-0" style="z-index:5">
+                        <span 
+                            id="btn-som"
+                            class="absolute bottom-3 right-3 cursor-pointer inline-flex items-center justify-center 
+                                    w-10 h-10 rounded-full bg-black/70 hover:bg-black/60 text-white 
+                                    shadow-md transition-opacity duration-500 ease-in-out
+                                    opacity-100"
+                            style="z-index:5"
+                            >
+                            <!-- Ícone MUTED -->
+                            <svg id="icon-mute" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M5 9v6h4l5 5V4L9 9H5z"></path>
+                                <line x1="5" y1="19" x2="19" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <iframe
+                    id="vimeo-player"
+                    src="https://player.vimeo.com/video/1113399111?autoplay=1&muted=1&controls=0&title=0&byline=0&portrait=0&autopause=0&playsinline=1&dnt=1"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy"
+                    style="width:100%;height:100%;border:0;background:#000"
+                    title="VSL"></iframe>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SELINHOS -->
+        <section class="mt-8 sm:mt-10 pb-10">
+            <div class="mx-auto max-w-[1160px] px-4 sm:px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                <div class="mt-4 flex flex-row items-center justify-center gap-3 text-slate-300 text-xs md:text-sm">
+                    <span>Acesso imediato</span><span class="hidden sm:inline text-slate-600">•</span>
+                    <span>Garantia de 7 dias</span><span class="hidden sm:inline text-slate-600">•</span>
+                    <span>Bônus exclusivos</span>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER colado -->
+    <footer class="mt-auto py-5 text-center text-slate-500 text-xs">
+        © 2025 • Todos os direitos reservados.
+    </footer>
+
+    <script src="https://player.vimeo.com/api/player.js" defer></script>
+    <script src="./script.js" defer></script>
+</body>
+</html>
