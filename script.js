@@ -8,7 +8,7 @@
 window.addEventListener('load', animarElementos);
 
 document.addEventListener('DOMContentLoaded', () => {
-  const REDIRECT_URL = '/planos.html';
+  const REDIRECT_URL = './planos.html';
   const iframe  = document.getElementById('vimeo-player');
   const overlay = document.getElementById('vimeo-unmute');
   const btnSom = document.getElementById('btn-som');
