@@ -1,4 +1,37 @@
- const elementos = document.querySelectorAll('.refresh-animate');
+(function () {
+      const btns = document.querySelectorAll('#energia-tabs .tab-btn, .tab-btn'); // fallback
+      const panels = document.querySelectorAll('.tab-panel');
+      const title = document.getElementById('tab-title');
+
+      const titles = {
+        s1: 'Diagnóstico e Limpeza Energética',
+        s2: 'Ativação e Programação',
+        s3: 'Manifestação e Ancoragem'
+      };
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-tab');
+          // ativa botão
+          btns.forEach(b => {
+            if (b.getAttribute('data-tab') === id) {
+              b.classList.remove('bg-white/5','text-white/70','ring-white/10');
+              b.classList.add('bg-yellow-300','text-black','ring-violet-500/30');
+            } else {
+              b.classList.add('bg-white/5','text-white/70','ring-white/10');
+              b.classList.remove('bg-yellow-300','text-black','ring-violet-500/30');
+            }
+          });
+          // troca painel
+          panels.forEach(p => p.classList.toggle('hidden', p.getAttribute('data-panel') !== id));
+          // troca título
+          if (title) title.textContent = titles[id] || '';
+        });
+      });
+    })();
+
+
+const elementos = document.querySelectorAll('.refresh-animate');
   function animarElementos() {
     elementos.forEach(elemento => {
       // Adiciona a classe de animação
