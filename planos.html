@@ -12,96 +12,103 @@
 <body class="">
    <main class="bg-slate-950 text-white">
     <!-- HERO -->
-        <section id="quem-e" class="relative overflow-hidden">
-            <div class="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10">
-                <!-- Título -->
-                <header class="text-center space-y-4">
-                    <h2 class="refresh-animate  text-3xl sm:text-4xl font-semibold">
-                    Quem é
-                    <span class="refresh-animate  bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
-                        Safira Sales
-                    </span>
-                    </h2>
-                    <div class="refresh-animate  h-1 w-14 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
-                </header>
+       <!-- SECTION: Hero — Quem é Safira Sales -->
+        <section id="quem-e" class="relative overflow-hidden bg-slate-950 text-white py-16 sm:py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
 
-                <!-- Avatar com aro em degradê -->
-                <div class="refresh-animate mt-10 flex justify-center">
-                    <div class="p-[2px] rounded-full bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-500">
-                        <div class="rounded-full bg-slate-900">
-                            <img src="./imgs/safira.png" alt="Foto de Safira Sales" class="h-44 w-44 sm:h-56 sm:w-56 rounded-full object-cover object-top"/>
+                <!-- COLUNA ESQUERDA (Texto + Cards) -->
+                <div class="lg:col-span-7">
+                    <!-- Título -->
+                     <h1 class="refresh-animate text-3xl sm:text-5xl font-semibold">
+                        Quem é 
+                        <span class="refresh-animate bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
+                        Safira Sales
+                        </span>
+                    </h1>
+                    <div class="refresh-animate h-1 w-40 mt-[20px] rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
+                    <!-- Texto -->
+                    <p class="refresh-animate mt-6 text-white/80 text-base sm:text-sm leading-relaxed max-w-2xl">
+                    Como Terapeuta Holística, Consultora em Radiestesia e Feng Shui, Numerologia,
+                    facilitadora de Access Consciousness, Mestre em Reiki e Consultora na Manipulação
+                    dos Florais de Bach, ela atua em São Paulo, Alphaville e interior de São Paulo,
+                    em outros países e estados. Como cidadã do mundo, Safira desenvolve o seu trabalho
+                    pela Europa e Américas. Em Portugal, Safira atua há quase 30 anos, além de ser solicitada
+                    em outros países como Suíça, Estados Unidos e Brasil.
+                    </p>
+
+                    <!-- Cards logo abaixo -->
+                    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Expertise -->
+                    <article class="refresh-animate rounded-2xl border border-white/10 bg-slate-900/50 p-5 backdrop-blur">
+                        <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-width="1.5" d="M12 2l1.7 4.3L18 8l-4.3 1.7L12 14l-1.7-4.3L6 8l4.3-1.7L12 2zM5 18l.9-2.1L8 15l-2.1-.9L5 12l-.9 2.1L2 15l2.1.9L5 18zM19 20l1-2.4L22 17l-2-.6L19 14l-1 2.4L16 17l2 .6 1 2.4z"/>
+                        </svg>
+                        <h4 class="font-semibold">Expertise</h4>
                         </div>
+                        <p class="mt-2 text-xs text-white/80">
+                        Física Quântica • Radiestesia • Feng Shui • Reiki • Numerologia
+                        </p>
+                    </article>
+
+                    <!-- Atendimentos -->
+                    <article class="refresh-animate rounded-2xl border border-white/10 bg-slate-900/50 p-5 backdrop-blur">
+                        <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="9" stroke-width="1.5"/>
+                            <path stroke-width="1.5" d="M3 12h18M12 3c3.5 3.5 3.5 14 0 18M12 3c-3.5 3.5-3.5 14 0 18"/>
+                        </svg>
+                        <h4 class="font-semibold">Atendimentos</h4>
+                        </div>
+                        <p class="mt-2 text-xs text-white/80">
+                        +25.000 vidas transformadas • +840 imóveis vendidos
+                        </p>
+                    </article>
+
+                    <!-- Experiência -->
+                    <article class="refresh-animate rounded-2xl border border-white/10 bg-slate-900/50 p-5 backdrop-blur">
+                        <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="8" r="4" stroke-width="1.5"/>
+                            <path stroke-width="1.5" d="M8 14l-2 7 6-3 6 3-2-7"/>
+                        </svg>
+                        <h4 class="font-semibold">Experiência</h4>
+                        </div>
+                        <p class="mt-2 text-xs text-white/80">+ de 30 anos de carreira</p>
+                    </article>
                     </div>
                 </div>
 
-                <!-- Cards -->
-                <div class="mt-12 grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-3">
-                    <!-- Card 1 -->
-                    <article class="refresh-animate rounded-2xl border border-white/10 bg-slate-900/40 p-6 sm:p-8 backdrop-blur">
-                        <div class="flex items-center gap-3">
-                            <!-- ícone brilho -->
-                            <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path stroke-width="1.5" d="M12 2l1.7 4.3L18 8l-4.3 1.7L12 14l-1.7-4.3L6 8l4.3-1.7L12 2zM5 18l.9-2.1L8 15l-2.1-.9L5 12l-.9 2.1L2 15l2.1.9L5 18zM19 20l1-2.4L22 17l-2-.6L19 14l-1 2.4L16 17l2 .6 1 2.4z"/>
-                            </svg>
-                            <h3 class="text-lg font-semibold">Expertise Holística</h3>
-                        </div>
-                        <p class="mt-3 text-sm text-white/70 leading-relaxed">
-                            Terapeuta holística, consultora em Radiestesia, Feng Shui e Numerologia.
-                        </p>
-                    </article>
-
-                    <!-- Card 2 -->
-                    <article class="refresh-animate rounded-2xl border border-white/10 bg-slate-900/40 p-6 sm:p-8 backdrop-blur">
-                        <div class="flex items-center gap-3">
-                            <!-- ícone globo -->
-                            <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <circle cx="12" cy="12" r="9" stroke-width="1.5"/>
-                            <path stroke-width="1.5" d="M3 12h18M12 3c3.5 3.5 3.5 14 0 18M12 3c-3.5 3.5-3.5 14 0 18"/>
-                            </svg>
-                            <h3 class="text-lg font-semibold">Atuação Global</h3>
-                        </div>
-                        <p class="mt-3 text-sm text-white/70 leading-relaxed">
-                            Atende Europa e Américas há quase 30 anos, com foco em desenvolvimento pessoal.
-                        </p>
-                    </article>
-
-                    <!-- Card 3 -->
-                    <article class="refresh-animate rounded-2xl border border-white/10 bg-slate-900/40 p-6 sm:p-8 backdrop-blur">
-                        <div class="flex items-center gap-3">
-                            <!-- ícone certificado -->
-                            <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <circle cx="12" cy="8" r="4" stroke-width="1.5"/>
-                            <path stroke-width="1.5" d="M8 14l-2 7 6-3 6 3-2-7"/>
-                            </svg>
-                            <h3 class="text-lg font-semibold">Certificações</h3>
-                        </div>
-                        <p class="mt-3 text-sm text-white/70 leading-relaxed">
-                            Facilitadora de Access Consciousness, Mestre em Reiki e especialista em Florais.
-                        </p>
-                    </article>
+                <!-- COLUNA DIREITA (FOTO MAIOR) -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <img src="./imgs/safira.png" alt="Safira Sales"
+                        class="refresh-animate w-[250px] sm:w-[300px] md:w-[350px] lg:w-[420px] object-contain drop-shadow-[0_24px_72px_rgba(0,0,0,.55)]" />
+                </div>
                 </div>
             </div>
 
-            <!-- Glow sutil no fundo -->
+            <!-- Glow de fundo -->
             <div aria-hidden="true" class="pointer-events-none absolute inset-0">
-            <div class="absolute -top-24 left-1/2 -translate-x-1/2 h-72 w-72 rounded-full blur-3xl opacity-20 bg-fuchsia-600"></div>
-            <div class="absolute -bottom-16 right-10 h-56 w-56 rounded-full blur-3xl opacity-10 bg-violet-600"></div>
+                <div class="absolute left-1/3 top-0 h-80 w-80 rounded-full blur-3xl opacity-20 bg-violet-600"></div>
+                <div class="absolute bottom-0 right-10 h-64 w-64 rounded-full blur-3xl opacity-10 bg-fuchsia-600"></div>
             </div>
         </section>
 
+
         
 
-        <section id="sobre-b" class="relative bg-slate-950 text-white py-16 sm:py-20">
+        <section id="problema" class="relative bg-slate-950 text-white py-14 sm:py-16">
             <header class="text-center space-y-4">
-                    <h1 class="text-3xl sm:text-4xl font-semibold">
-                        Ativar minha
+                    <h1 class="elemento text-3xl sm:text-4xl font-semibold">
+                        Porque outras
                         <span class="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
-                        energia Milionária
+                        soluções falham
                         </span>
                     </h1>
-                    <div class="h-1 w-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
-                     <h2 class="mt-5 sm:mt-6 max-w-[820px] mx-auto text-slate-300/95 text-base sm:text-lg">
-                        Você provavelmente já se perguntou: "Por que eu não consigo quebrar esse teto?
+                    <div class="elemento h-1 w-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
+                     <h2 class="elemento mt-5 sm:mt-6 max-w-[820px] mx-auto text-slate-300/95 text-base sm:text-lg">
+                        Você provavelmente já se perguntou: "Por que eu não consigo quebrar esse teto?""
                     </h2>
             </header>
 
@@ -109,19 +116,19 @@
                 <div class="mx-auto max-w-6xl px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-start">
                     <article class="max-w-5xl mx-auto px-2 sm:px-6 space-y-8">
                         <!-- TÍTULO DE IMPACTO -->
-                        <h3 class="text-2xl text-center md:text-left sm:text-3xl font-bold">
+                        <h3 class="elemento text-2xl text-center md:text-left sm:text-3xl font-bold">
                             O problema não é falta de esforço. É que você ataca a questão de forma isolada.
                         </h3>
                         
                         <!-- TEXTO PRINCIPAL -->
-                        <p class="text-lg text-white/80 max-w-3xl md:text-left text-center leading-relaxed">
+                        <p class="elemento text-lg text-white/80 max-w-3xl md:text-left text-center leading-relaxed">
                         Só mindset, só estratégia ou só visualização não resolvem.
                         Seus bloqueios de prosperidade são <strong>Redes Energéticas Multicamadas Interconectadas</strong>
                         que exigem intervenção <strong>simultânea</strong> em <strong>5 dimensões</strong>.
                         </p>
 
-                        <a href="#checkout"
-                            class="group relative inline-flex w-full sm:w-auto items-center justify-center gap-3
+                        <a href="https://pay.kiwify.com.br/qj4nmL0"
+                            class="elemento group relative inline-flex w-full sm:w-auto items-center justify-center gap-3
                                     rounded-2xl px-6 sm:px-10 py-4 sm:py-5
                                     font-extrabold tracking-wide uppercase text-white
                                     bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600
@@ -141,7 +148,7 @@
                     <!-- COLUNA CARDS -->
                     <aside class="grid sm:grid-cols-2 gap-4 sm:gap-6">
                         <!-- Card 1 -->
-                        <article class="rounded-2xl border border-white/10 bg-slate-900/50 p-5 sm:p-6 backdrop-blur">
+                        <article class="elemento rounded-2xl border border-white/10 bg-slate-900/50 p-5 sm:p-6 backdrop-blur">
                             <div class="flex items-center gap-3">
                             <!-- ícone cérebro -->
                             <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -156,7 +163,7 @@
                         </article>
 
                         <!-- Card 2 -->
-                        <article class="rounded-2xl border border-white/10 bg-slate-900/50 p-5 sm:p-6 backdrop-blur">
+                        <article class="elemento rounded-2xl border border-white/10 bg-slate-900/50 p-5 sm:p-6 backdrop-blur">
                             <div class="flex items-center gap-3">
                             <!-- ícone alvo -->
                             <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -172,7 +179,7 @@
                         </article>
 
                         <!-- Card 3 -->
-                        <article class="rounded-2xl border border-white/10 bg-slate-900/50 p-5 sm:p-6 backdrop-blur">
+                        <article class="elemento rounded-2xl border border-white/10 bg-slate-900/50 p-5 sm:p-6 backdrop-blur">
                             <div class="flex items-center gap-3">
                             <!-- ícone olho -->
                             <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -187,7 +194,7 @@
                         </article>
 
                         <!-- Card 4 (resumo/integração) -->
-                        <article class="rounded-2xl border border-white/10 bg-gradient-to-br from-violet-600/20 to-fuchsia-600/20 p-5 sm:p-6">
+                        <article class="elemento rounded-2xl border border-white/10 bg-gradient-to-br from-violet-600/20 to-fuchsia-600/20 p-5 sm:p-6">
                             <div class="flex items-center gap-3">
                             <!-- ícone rede -->
                             <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -209,16 +216,16 @@
             </section>
         </section>
 
-        <section id="sobre-b" class="relative bg-slate-950 text-white px-4 sm:px-6">
+        <section id="relatos" class="relative bg-slate-950 text-white px-4 sm:px-6">
             <header class="text-center space-y-4">
-                    <h1 class="text-3xl sm:text-4xl font-semibold">
+                    <h1 class="elemento text-3xl sm:text-4xl font-semibold">
                         O Que Dizem 
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
+                        <span class="elemento bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
                         Nossos Alunos
                         </span>
                     </h1>
-                    <div class="h-1 w-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
-                     <h2 class="mt-5 sm:mt-6 max-w-[820px] mx-auto text-slate-300/95 text-base sm:text-lg">
+                    <div class="elemento h-1 w-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
+                     <h2 class="mt-5 elemento sm:mt-6 max-w-[820px] mx-auto text-slate-300/95 text-base sm:text-lg">
                         Veja os resultados reais de quem já transformou sua vida
                     </h2>
             </header>
@@ -229,7 +236,7 @@
                     <div class="grid gap-6 lg:gap-8 md:grid-cols-2">
                     
                     <!-- CARD 1 -->
-                    <article class="rounded-2xl border border-white/10 bg-slate-900/50 backdrop-blur p-5 sm:p-6">
+                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/50 backdrop-blur p-5 sm:p-6">
                         <header class="flex items-center justify-between mb-4">
                         <div class="flex items-center gap-2">
                             <span class="text-violet-400">❝❞</span>
@@ -256,7 +263,7 @@
                     </article>
 
                     <!-- CARD 2 -->
-                    <article class="rounded-2xl border border-white/10 bg-slate-900/50 backdrop-blur p-5 sm:p-6">
+                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/50 backdrop-blur p-5 sm:p-6">
                         <header class="flex items-center justify-between mb-4">
                         <div class="flex items-center gap-2">
                             <span class="text-violet-400">❝❞</span>
@@ -287,382 +294,388 @@
             </div>
         </section>
         
-        <section id="sobre-b" class="relative bg-slate-950 text-white px-4 sm:px-6 py-16 sm:py-20">
+        <section id="conteudo" class="relative bg-slate-950 text-white px-4 sm:px-6 py-14 sm:py-16">
             <header class="text-center space-y-4">
-                    <h1 class="text-3xl sm:text-4xl font-semibold">
-                        Por que outras 
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
-                        soluções falham
-                        </span>
-                    </h1>
-                    <div class="h-1 w-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
-            </header>
-            <section id="falsas-solucoes" class="bg-slate-950 text-white py-6 sm:py-12">
-                <div class="max-w-6xl mx-auto px-4 sm:px-6">
-                    <div class="grid gap-6 md:grid-cols-2">
-                    <!-- CARD 1 -->
-                    <article class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 sm:p-8 backdrop-blur">
-                        <h3 class="text-lg sm:text-xl font-semibold text-violet-400 mb-3">
-                        Cursos genéricos de "mindset milionário"
-                        </h3>
-                        <p class="text-sm sm:text-base text-white/80 leading-relaxed">
-                        Trabalham apenas com crenças superficiais, ignorando programações
-                        ancestrais de 3-5 gerações que controlam seus limites inconscientes sobre prosperidade feminina.
-                        </p>
-                    </article>
-
-                    <!-- CARD 2 -->
-                    <article class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 sm:p-8 backdrop-blur">
-                        <h3 class="text-lg sm:text-xl font-semibold text-violet-400 mb-3">
-                        Planilhas e controles financeiros tradicionais
-                        </h3>
-                        <p class="text-sm sm:text-base text-white/80 leading-relaxed">
-                        Focam apenas na ação externa sem remover os bloqueios energéticos
-                        internos que fazem você se autosabotar sempre que começa a prosperar de verdade.
-                        </p>
-                    </article>
-
-                    <!-- CARD 3 -->
-                    <article class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 sm:p-8 backdrop-blur">
-                        <h3 class="text-lg sm:text-xl font-semibold text-violet-400 mb-3">
-                        Técnicas de visualização isoladas
-                        </h3>
-                        <p class="text-sm sm:text-base text-white/80 leading-relaxed">
-                        Não conseguem bypassar a "fragmentação energética" que mantém mulheres
-                        competentes presas em ciclos de estagnação, mesmo dominando estratégias de negócio.
-                        </p>
-                    </article>
-
-                    <!-- CARD 4 -->
-                    <article class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 sm:p-8 backdrop-blur">
-                        <h3 class="text-lg sm:text-xl font-semibold text-violet-400 mb-3">
-                        Terapias convencionais que exigem anos
-                        </h3>
-                        <p class="text-sm sm:text-base text-white/80 leading-relaxed">
-                        Enquanto você gasta tempo e dinheiro em sessões intermináveis, o Sistema
-                        Quântico-Pentadimensional cria uma "matriz energética autofortificante" que se expande permanentemente.
-                        </p>
-                    </article>
-
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section id="sobre-b" class="relative bg-slate-950 text-white px-4 sm:px-6">
-            <header class="text-center space-y-4">
-                    <h1 class="text-3xl sm:text-4xl font-semibold">
+                    <h1 class="elemento text-3xl sm:text-4xl font-semibold">
                         O que você
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
-                        irá receber
+                        <span class="elemento bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
+                        irá ver
                         </span>
                     </h1>
-                    <div class="h-1 w-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
-                     <h2 class="mt-5 sm:mt-6 max-w-[820px] mx-auto text-slate-300/95 text-base sm:text-lg">
+                    <div class="elemento h-1 w-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
+                     <h2 class="elemento mt-5 sm:mt-6 max-w-[820px] mx-auto text-slate-300/95 text-base sm:text-lg">
                         O Método 5D que Combina Reiki, Feng Shui, Radiestesia, Física Quântica e Numerologia para Desbloquear Sua Energia Milionária em 21 Dias.
                     </h2>
             </header>
 
-            <!-- SECTION: Livro à esquerda + 3 cards à direita (labels não quebram) -->
            <!-- SECTION: Livro + Card com abas (alturas balanceadas) -->
             <section class="bg-slate-950 text-white py-6 sm:py-10">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 items-stretch">
 
                     <!-- LIVRO -->
-                    <div class="h-[420px] sm:h-[460px] lg:h-[520px] rounded-2xl bg-white/5">
-                    <div class="w-full h-full p-4 sm:p-6 flex items-center justify-center">
-                        <img
-                        src="./imgs/livroos21codigo.png"
-                        alt="Livro — Os 21 Códigos Secretos"
-                        class="max-h-full w-auto object-contain rounded-xl shadow-[0_20px_60px_rgba(0,0,0,.6)]"
-                        loading="lazy"
-                        />
-                    </div>
+                    <div class="elemento h-[420px] sm:h-[460px] lg:h-[520px] rounded-2xl bg-white/5">
+                        <div class="w-full h-full p-4 sm:p-6 flex items-center justify-center">
+                            <img
+                            src="./imgs/livroos21codigo.png"
+                            alt="Livro — Os 21 Códigos Secretos"
+                            class="max-h-full w-auto object-contain rounded-xl shadow-[0_20px_60px_rgba(0,0,0,.6)]"
+                            loading="lazy"
+                            />
+                        </div>
                     </div>
 
                     <!-- CARD COM ABAS -->
                     <article id="tabs-programa"
-                            class="h-[420px] sm:h-[460px] lg:h-[520px] rounded-2xl border border-white/10 bg-slate-900/60 backdrop-blur
+                            class="elemento h-[420px] sm:h-[460px] lg:h-[520px] rounded-2xl border border-white/10 bg-slate-900/60 backdrop-blur
                                     p-4 sm:p-6 flex flex-col">
-                    <!-- Abas -->
-                    <div class="flex flex-wrap gap-2 mb-[20px]">
-                        <button data-tab="s1"
-                                class="tab-btn inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs sm:text-sm font-semibold
-                                    bg-yellow-300 text-black ring-1 ring-violet-500/30">
-                        SEMANA 1
-                        </button>
-                        <button data-tab="s2"
-                                class="tab-btn inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs sm:text-sm font-semibold
-                                    bg-white/5 text-white/70 ring-1 ring-white/10">
-                        SEMANA 2
-                        </button>
-                        <button data-tab="s3"
-                                class="tab-btn inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs sm:text-sm font-semibold
-                                    bg-white/5 text-white/70 ring-1 ring-white/10">
-                        SEMANA 3
-                        </button>
-                    </div>
+                        <!-- Abas -->
+                        <div class="flex flex-wrap gap-2 mb-[20px]">
+                            <button data-tab="s1"
+                                    class="tab-btn inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs sm:text-sm font-semibold
+                                        bg-yellow-300 text-black ring-1 ring-violet-500/30">
+                            SEMANA 1
+                            </button>
+                            <button data-tab="s2"
+                                    class="tab-btn inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs sm:text-sm font-semibold
+                                        bg-white/5 text-white/70 ring-1 ring-white/10">
+                            SEMANA 2
+                            </button>
+                            <button data-tab="s3"
+                                    class="tab-btn inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs sm:text-sm font-semibold
+                                        bg-white/5 text-white/70 ring-1 ring-white/10">
+                            SEMANA 3
+                            </button>
+                        </div>
 
-                    <!-- Título -->
-                    <h3 id="tab-title" class="mt-4 text-lg sm:text-xl font-bold text-amber-300 mb-[15px]">
-                        Diagnóstico e Limpeza Energética
-                    </h3>
+                        <!-- Título -->
+                        <h3 id="tab-title" class="elemento mt-4 text-lg sm:text-xl font-bold text-amber-300 mb-[15px]">
+                            Diagnóstico e Limpeza Energética
+                        </h3>
 
-                    <!-- Conteúdo (área auto com rolagem se precisar em telas menores) -->
-                    <div class="mt-3 text-sm sm:text-[15px] leading-relaxed overflow-auto pr-1 flex-1">
-                        <!-- S1 -->
-                        <ul data-panel="s1" class="tab-panel space-y-2">
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 1–3:</span><span>Radiestesia Financeira — Mapeamento completo dos seus bloqueios invisíveis.</span></li>
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 4–5:</span><span>Reiki da Prosperidade — Limpeza energética financeira profunda.</span></li>
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 6–7:</span><span>Feng Shui Abundante — Transformação do ambiente em santuário magnético.</span></li>
-                        </ul>
+                        <!-- Conteúdo -->
+                        <div class="elemento mt-3 text-sm sm:text-[15px] leading-relaxed overflow-auto pr-1 flex-1">
+                            <!-- S1 -->
+                            <ul data-panel="s1" class="tab-panel space-y-2">
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 1–3:</span><span>Radiestesia Financeira — Mapeamento completo dos seus bloqueios invisíveis.</span></li>
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 4–5:</span><span>Reiki da Prosperidade — Limpeza energética financeira profunda.</span></li>
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 6–7:</span><span>Feng Shui Abundante — Transformação do ambiente em santuário magnético.</span></li>
+                            </ul>
 
-                        <!-- S2 -->
-                        <ul data-panel="s2" class="tab-panel hidden space-y-2">
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 8–10:</span><span>Códigos Numerológicos Pessoais — Seus números de poder financeiro.</span></li>
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 11–14:</span><span>Reprogramação Quântica — Mudança de frequência permanente.</span></li>
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dia 15:</span><span>Ritual de Integração das 5 Dimensões.</span></li>
-                        </ul>
+                            <!-- S2 -->
+                            <ul data-panel="s2" class="tab-panel hidden space-y-2">
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 8–10:</span><span>Códigos Numerológicos Pessoais — Seus números de poder financeiro.</span></li>
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 11–14:</span><span>Reprogramação Quântica — Mudança de frequência permanente.</span></li>
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dia 15:</span><span>Ritual de Integração das 5 Dimensões.</span></li>
+                            </ul>
 
-                        <!-- S3 -->
-                        <ul data-panel="s3" class="tab-panel hidden space-y-2">
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 16–18:</span><span>Rituais Ancestrais de Manifestação — Ativação da abundância.</span></li>
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 19–20:</span><span>Criação do Santuário Pessoal da Prosperidade.</span></li>
-                        <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dia 21:</span><span>Protocolo de Manutenção Permanente.</span></li>
-                        </ul>
+                            <!-- S3 -->
+                            <ul data-panel="s3" class="tab-panel hidden space-y-2">
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 16–18:</span><span>Rituais Ancestrais de Manifestação — Ativação da abundância.</span></li>
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dias 19–20:</span><span>Criação do Santuário Pessoal da Prosperidade.</span></li>
+                            <li class="flex gap-2"><span class="text-violet-300 font-semibold shrink-0">Dia 21:</span><span>Protocolo de Manutenção Permanente.</span></li>
+                            </ul>
 
-                         <a href="#checkout"
-                            class="mt-[20px] md:mt-[45px] md:ml-[35px] group relative inline-flex w-full sm:w-auto items-center justify-center gap-3
-                                    rounded-2xl sm:px-10 py-4 sm:py-5
-                                    font-extrabold tracking-wide uppercase text-white
-                                    bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600
-                                    shadow-xl shadow-indigo-900/30
-                                    transition hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0
-                                    focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-400/60">
-                            <!-- brilho superior sutil -->
-                            <span aria-hidden
-                                    class="pointer-events-none absolute inset-x-0 -top-1 h-1/2 rounded-2xl
-                                        bg-white/10 blur-[2px]"></span>
+                            <a href="https://pay.kiwify.com.br/qj4nmL0"
+                                class="mt-[20px] md:mt-[45px] md:ml-[35px] group relative inline-flex w-full sm:w-auto items-center justify-center gap-3
+                                        rounded-2xl sm:px-10 py-4 sm:py-5
+                                        font-extrabold tracking-wide uppercase text-white
+                                        bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600
+                                        shadow-xl shadow-indigo-900/30
+                                        transition hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0
+                                        focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-400/60">
+                                <!-- brilho superior sutil -->
+                                <span aria-hidden
+                                        class="pointer-events-none absolute inset-x-0 -top-1 h-1/2 rounded-2xl
+                                            bg-white/10 blur-[2px]"></span>
 
-                            <span class="text-xl sm:text-2xl">🚀</span>
-                            <span class="text-base sm:text-lg">Garantir minha vaga agora</span>
-                        </a>
-                    </div>
+                                <span class="text-xl sm:text-2xl">🚀</span>
+                                <span class="text-base sm:text-lg">Garantir minha vaga agora</span>
+                            </a>
+                        </div>
                     </article>
                 </div>
             </section>
         </section>
 
         <!-- SECTION: Bônus -->
-        <section class="bg-slate-950 text-white py-16 sm:py-20">
-            <div class="mx-auto max-w-6xl px-4 sm:px-6">
-                <!-- Badge -->
-                <div class="flex justify-center">
-                <span class="inline-flex rounded-full px-4 py-1.5 text-[12px] font-bold uppercase tracking-wide
-                            bg-gradient-to-r from-violet-600 to-indigo-600 shadow-md">
-                    Bônus Exclusivos
-                </span>
+        <section id="bonus" class="bg-slate-950 text-white md:py-8">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6">
+
+                <!-- HEADER: texto à esquerda / CTA à direita -->
+                <div class="grid gap-6 md:gap-8 md:grid-cols-12 items-end">
+                    <!-- Título + texto -->
+                    <div class="md:col-span-8">
+                        <h2 class="elemento text-3xl sm:text-5xl font-extrabold leading-tight">
+                        Receba <span class="elemento bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-yellow-300 to-amber-400">
+                        Bônus Incríveis</span>
+                        </h2>
+                        <div class="elemento h-1 w-24 mt-4 rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
+
+                        <p class="elemento mt-6 text-white/80 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        Além do curso completo, preparamos bônus incríveis para você reprogramar sua vida imediatamente.
+                        </p>
+                    </div>
+                <!-- CTA -->
+                    <div class="elemento md:col-span-4 flex md:justify-end">
+                        <a href="https://pay.kiwify.com.br/qj4nmL0"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl px-6 py-4
+                                bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600
+                                shadow-md shadow-indigo-900/30 transition hover:brightness-110
+                                focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-400/60">
+                        <span class="text-lg">🚀</span>
+                        <span class="whitespace-nowrap font-extrabold tracking-wide uppercase">
+                            Garantir minha vaga agora
+                        </span>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Título -->
-                <h1 class="mt-6 text-center text-3xl sm:text-5xl font-extrabold">
-                    Receba <span class="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-yellow-300 to-amber-400">Gratuitamente</span>
-                </h1>
-                <p class="mt-4 text-center text-white/70 text-base sm:text-lg">
-                Além do curso completo, você ainda ganha estes bônus valiosos
-                </p>
+                <!-- CARDS: 4 itens responsivos (1 → 2 → 4 colunas) -->
+                <div class="mt-10 grid gap-6 md:gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <!-- CARD 1 -->
+                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
+                        <div aria-hidden="true"
+                            class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rotate-45 rounded-xl
+                                    bg-gradient-to-br from-amber-300/20 via-fuchsia-400/15 to-violet-500/10"></div>
 
-                <!-- GRID de cards -->
-                <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                <!-- CARD 1 -->
-                <article class="relative rounded-2xl border border-white/10 bg-slate-900/60 p-6 sm:p-8 overflow-hidden">
-                    <!-- efeito de cor (canto superior direito) -->
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rotate-45 rounded-xl
-                                bg-gradient-to-br from-amber-300/20 via-fuchsia-400/15 to-violet-500/10"></div>
+                        <div class="flex items-center gap-4">
+                        <img src="./imgs/cristaisproperidade-removebg-preview.png" alt="E-book Guia de Cristais"
+                            class="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
+                        <div>
+                            <h3 class="text-sm sm:text-lg font-semibold">E-book: Guia de Cristais</h3>
+                            <p class="mt-1 text-xs sm:text-sm text-white/70">
+                            Manual prático para usar cristais e atrair prosperidade.
+                            </p>
+                        </div>
+                        </div>
 
-                    <!-- imagem / ícone -->
-                    <div class="flex justify-center">
-                    <img src="./imgs/cristaisproperidade-removebg-preview.png" alt="E-book Guia de Cristais"
-                        class="h-20 sm:h-28 object-contain" />
-                    </div>
+                        <div class="mt-4">
+                            <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
+                                        bg-amber-400/20 text-amber-300 ring-1 ring-amber-300/30">
+                                De R$100 por R$00,00
+                            </span>
+                        </div>
+                    </article>
 
-                    <h3 class="mt-6 text-center text-lg sm:text-xl font-semibold">E-book: Guia Completo de Cristais</h3>
-                    <p class="mt-3 text-center text-sm text-white/70">
-                    Manual completo sobre como usar cristais para atrair prosperidade e abundância.
-                    </p>
+                    <!-- CARD 2 -->
+                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
+                        <div aria-hidden="true"
+                            class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rotate-45 rounded-xl
+                                    bg-gradient-to-br from-violet-400/20 via-fuchsia-400/15 to-indigo-500/10"></div>
 
-                    <div class="mt-6 flex justify-center">
-                    <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold
-                                bg-amber-400/20 text-amber-300 ring-1 ring-amber-300/30">
-                        Incluso Gratuitamente
-                    </span>
-                    </div>
-                </article>
+                        <div class="flex items-center gap-4">
+                        <img src="./imgs/osarquetipos-removebg-preview.png" alt="7 Arquétipos da Mulher Próspera"
+                            class="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
+                        <div>
+                            <h3 class="text-sm sm:text-lg font-semibold">7 Arquétipos da Mulher Próspera</h3>
+                            <p class="mt-1 text-xs sm:text-xs text-white/70">
+                            Descubra seu arquétipo e potencialize sua prosperidade.
+                            </p>
+                        </div>
+                        </div>
 
-                <!-- CARD 2 -->
-                <article class="relative rounded-2xl border border-white/10 bg-slate-900/60 p-6 sm:p-8 overflow-hidden">
-                    <!-- efeito de cor -->
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rotate-45 rounded-xl
-                                bg-gradient-to-br from-violet-400/20 via-fuchsia-400/15 to-indigo-500/10"></div>
+                        <div class="mt-4">
+                        <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
+                                    bg-violet-400/20 text-violet-300 ring-1 ring-violet-300/30">
+                            De R$100 por R$00,00
+                        </span>
+                        </div>
+                    </article>
 
-                    <div class="flex justify-center">
-                    <img src="./imgs/osarquetipos-removebg-preview.png" alt="Os 7 Arquétipos da Mulher Próspera"
-                        class="h-20 sm:h-28 object-contain" />
-                    </div>
+                    <!-- CARD 3 -->
+                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
+                        <div aria-hidden="true"
+                            class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rotate-45 rounded-xl
+                                    bg-gradient-to-br from-fuchsia-400/20 via-violet-400/15 to-indigo-500/10"></div>
 
-                    <h3 class="mt-6 text-center text-lg sm:text-xl font-semibold">
-                    Os 7 Arquétipos da Mulher Próspera
-                    </h3>
-                    <p class="mt-3 text-center text-sm text-white/70">
-                    Descubra qual arquétipo você representa e como potencializar sua prosperidade.
-                    </p>
+                        <div class="flex items-center gap-4">
+                        <img src="./imgs/reprogramação-removebg-preview.png" alt="Hotseat Ao Vivo Exclusivo"
+                            class="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
+                        <div>
+                            <h3 class="text-sm sm:text-lg font-semibold">Reprogramação do Subconciente</h3>
+                            <p class="mt-1 text-xs sm:text-sm text-white/70">
+                                Um áudio transformador que alinha seus pensamentos com a energia da abundância.
+                            </p>
+                        </div>
+                        </div>
 
-                    <div class="mt-6 flex justify-center">
-                    <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold
-                                bg-violet-400/20 text-violet-300 ring-1 ring-violet-300/30">
-                        Incluso Gratuitamente
-                    </span>
-                    </div>
-                </article>
+                        <div class="mt-4">
+                        <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
+                                    bg-fuchsia-400/20 text-fuchsia-300 ring-1 ring-fuchsia-300/30">
+                            Leve de brinde !
+                        </span>
+                        </div>
+                    </article>
 
-                <!-- CARD 3 -->
-                <article class="relative rounded-2xl border border-white/10 bg-slate-900/60 p-6 sm:p-8 overflow-hidden">
-                    <!-- efeito de cor -->
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rotate-45 rounded-xl
-                                bg-gradient-to-br from-fuchsia-400/20 via-violet-400/15 to-indigo-500/10"></div>
+                    <!-- CARD 4 (novo) -->
+                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
+                        <div aria-hidden="true"
+                            class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rotate-45 rounded-xl
+                                    bg-gradient-to-br from-fuchsia-400/20 via-violet-400/15 to-indigo-500/10"></div>
 
-                    <div class="flex justify-center">
-                    <img src="./imgs/aulabonus-removebg-preview.png" alt="Hotseat Ao Vivo Exclusivo"
-                        class="h-20 sm:h-32 object-contain" />
-                    </div>
+                        <div class="flex items-center gap-4">
+                        <img src="./imgs/aulabonus-removebg-preview.png" alt="Hotseat Ao Vivo Exclusivo"
+                            class="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
+                        <div>
+                            <h3 class="text-sm sm:text-lg font-semibold">Hotseat Ao Vivo Exclusivo</h3>
+                            <p class="mt-1 text-xs sm:text-sm text-white/70">
+                            Sessão ao vivo para tirar dúvidas e acelerar seus resultados.
+                            </p>
+                        </div>
+                        </div>
 
-                    <h3 class="mt-6 text-center text-lg sm:text-xl font-semibold">
-                    Hotseat Ao Vivo Exclusivo
-                    </h3>
-                    <p class="mt-3 text-center text-sm text-white/70">
-                    Os 100 primeiros alunos participarão de um Hotseat sobre Física Quântica e Prosperidade.
-                    </p>
-
-                    <div class="mt-6 flex justify-center">
-                    <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold
-                                bg-fuchsia-400/20 text-fuchsia-300 ring-1 ring-fuchsia-300/30">
-                        Exclusivo!
-                    </span>
-                    </div>
-                </article>
+                        <div class="mt-4">
+                        <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
+                                    bg-fuchsia-400/20 text-fuchsia-300 ring-1 ring-fuchsia-300/30">
+                            Leve de brinde !
+                        </span>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="sobre-b" class="relative bg-slate-950 text-white px-4 sm:px-6">
-            <header class="text-center space-y-4">
-                    <h1 class="text-3xl sm:text-4xl font-semibold">
-                        Ativar minha
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500 font-extrabold">
-                        energia Milionária
-                        </span>
-                    </h1>
-                    <div class="h-1 w-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
-                     <h2 class="mt-5 sm:mt-6 max-w-[820px] mx-auto text-slate-300/95 text-base sm:text-lg">
-                        Você provavelmente já se perguntou: "Por que eu não consigo quebrar esse teto?
+        <!-- SECTION: Preço / Compra (clean) -->
+        <section id="oferta" class="bg-slate-950 text-white py-20 sm:py-24">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6">
+
+                <!-- Cabeçalho -->
+                <header class="text-center mb-10 sm:mb-12">
+                    <h2 class="elemento text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Comece sua transformação <span class="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-purple-500">agora</span>
                     </h2>
-            </header>
+                    <div class="elemento h-1 w-20 sm:w-28 mx-auto mt-4 rounded-full bg-gradient-to-r from-amber-400 to-purple-500"></div>
+                    <p class="elemento mt-4 text-white/75 text-base sm:text-lg">Acesso imediato • Suporte durante o programa</p>
+                </header>
 
-            <!-- SECTION: Oferta -->
-            <section class="bg-slate-950 text-white py-6 sm:py-10">
-                <div class="max-w-6xl mx-auto px-4 sm:px-6">
-                    <div class="mx-auto max-w-md">
-                    <!-- CARD -->
-                    <article class="relative rounded-2xl border border-white/10 bg-slate-900/70 backdrop-blur p-5 sm:p-6 shadow-[0_20px_60px_rgba(0,0,0,.35)]">
-                        <!-- Badge topo -->
-                        <div class="flex justify-center -mt-2 mb-4">
-                        <span class="inline-flex items-center rounded-full px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-wider
-                                    bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-900 shadow">
-                            Oferta especial
-                        </span>
-                        </div>
+                <!-- Wrapper 2 colunas -->
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <!-- Coluna Benefícios -->
+                    <aside class="elemento lg:col-span-7">
+                        <div class="rounded-2xl border border-white/10 bg-slate-900/50 backdrop-blur p-6 sm:p-8">
+                        <h3 class="text-xl sm:text-2xl font-bold">Você leva tudo isso</h3>
 
-                        <!-- Preço antigo -->
-                        <p class="text-center text-sm text-white/70">De:</p>
-                        <p class="text-center text-lg font-semibold text-white/60 line-through">R$ 597,00</p>
-
-                        <!-- Preço novo -->
-                        <p class="mt-3 text-center text-sm font-bold text-violet-300">Por apenas:</p>
-                        <div class="mt-1 flex items-end justify-center gap-1">
-                        <span class="text-4xl text-yellow-400 sm:text-5xl font-extrabold">R$ 97</span>
-                        <span class="text-2xl text-yellow-400 sm:text-3xl font-extrabold">,00</span>
-                        </div>
-                        <p class="mt-2 text-center text-emerald-400 text-sm font-semibold">83% de desconto!</p>
-
-                        <!-- O que recebe -->
-                        <h3 class="mt-6 text-center text-lg font-extrabold">O que você recebe:</h3>
-                        <ul class="mt-4 space-y-3 text-sm">
-                        <li class="flex items-start gap-2">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-emerald-400"></span>
-                            <span>21 códigos secretos da prosperidade</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-emerald-400"></span>
-                            <span>Método completo em 21 dias</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-emerald-400"></span>
-                            <span>Acesso vitalício ao conteúdo</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-emerald-400"></span>
-                            <span>Suporte completo durante o curso</span>
-                        </li>
-                        </ul>
-
-                        <!-- CTA -->
-                        <div class="mt-6">
-                        <a href="#checkout"
-                            class="group inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-4
-                                    bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600
-                                    shadow-md shadow-indigo-900/30 transition hover:brightness-110
-                                    focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-400/60">
-                            <span class="text-lg">🚀</span>
-                            <!-- NÃO QUEBRA -->
-                            <span class="whitespace-nowrap text-sm sm:text-base font-extrabold tracking-wide uppercase">
-                            Garantir minha vaga agora
-                            </span>
-                        </a>
-                        </div>
-
-                        <!-- Garantia -->
-                        <div class="mt-4 rounded-xl bg-white/5 p-4">
-                        <div class="flex items-center gap-3">
-                            <div class="grid place-items-center h-10 w-10 rounded-lg bg-amber-400/20 ring-1 ring-amber-300/30">
-                            <!-- medalha simples -->
-                            <svg viewBox="0 0 24 24" class="h-6 w-6 text-amber-300" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 3l2 4 4 .5-3 3 .7 4L12 13l-3.7 1.5.7-4-3-3 4-.5 2-4Z"/>
-                                <path d="M8 16v5l4-2 4 2v-5"/>
-                            </svg>
+                        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+                            <!-- bloco -->
+                            <div class="rounded-xl bg-white/5 p-4 border border-white/10">
+                            <div class="flex items-center gap-3">
+                                <span class="grid h-9 w-9 place-items-center rounded-lg bg-emerald-400/15 ring-1 ring-emerald-300/30 text-emerald-300">✓</span>
+                                <p class="font-semibold">21 códigos secretos da prosperidade</p>
                             </div>
-                            <div>
-                            <p class="font-semibold text-[15px] text-violet-200">Garantia de 7 dias</p>
-                            <p class="text-xs text-white/70">100% do seu dinheiro de volta</p>
+                            <p class="mt-2 text-sm text-white/70">Sequência guiada para desbloqueio financeiro em 21 dias.</p>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-4 border border-white/10">
+                            <div class="flex items-center gap-3">
+                                <span class="grid h-9 w-9 place-items-center rounded-lg bg-emerald-400/15 ring-1 ring-emerald-300/30 text-emerald-300">✓</span>
+                                <p class="font-semibold">Método completo em 21 dias</p>
+                            </div>
+                            <p class="mt-2 text-sm text-white/70">Passo a passo simples, com tarefas aplicáveis.</p>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-4 border border-white/10">
+                            <div class="flex items-center gap-3">
+                                <span class="grid h-9 w-9 place-items-center rounded-lg bg-emerald-400/15 ring-1 ring-emerald-300/30 text-emerald-300">✓</span>
+                                <p class="font-semibold">Acesso vitalício</p>
+                            </div>
+                            <p class="mt-2 text-sm text-white/70">Veja e reveja quando quiser, em qualquer dispositivo.</p>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-4 border border-white/10">
+                            <div class="flex items-center gap-3">
+                                <span class="grid h-9 w-9 place-items-center rounded-lg bg-emerald-400/15 ring-1 ring-emerald-300/30 text-emerald-300">✓</span>
+                                <p class="font-semibold">Suporte durante o curso</p>
+                            </div>
+                            <p class="mt-2 text-sm text-white/70">Acompanhamento para você não travar no meio do caminho.</p>
                             </div>
                         </div>
-                        </div>
 
-                        <!-- Rodapé aviso -->
-                        <div class="mt-5 text-center">
-                        <p class="text-amber-300 font-semibold text-sm">Oferta por tempo limitado!</p>
-                        <p class="mt-1 text-[12px] text-white/60">Não perca essa oportunidade única de transformação</p>
+                        <!-- Bônus -->
+                        <div class="mt-6 rounded-xl border border-violet-400/20 bg-gradient-to-r from-violet-500/10 via-fuchsia-500/10 to-indigo-500/10 p-4 sm:p-5">
+                            <p class="text-sm font-semibold text-violet-200 uppercase tracking-wide">Bônus inclusos</p>
+                            <ul class="mt-3 space-y-2 text-sm text-white/80">
+                            <li>• E-book: Guia Completo de Cristais</li>
+                            <li>• Os 7 Arquétipos da Mulher Próspera</li>
+                            <li>• Hotseat ao vivo (vagas limitadas)</li>
+                            </ul>
                         </div>
-                    </article>
+                        </div>
+                    </aside>
+
+                    <!-- Coluna Card de Preço (sticky em telas grandes) -->
+                    <div class="elemento lg:col-span-5">
+                        <div class="lg:sticky lg:top-10">
+                            <article class="relative rounded-2xl border border-white/10 bg-slate-900/70 backdrop-blur p-6 sm:p-7 shadow-[0_24px_60px_rgba(0,0,0,.35)]">
+                                <!-- selo -->
+                                <div class="flex justify-center">
+                                <span class="inline-flex items-center rounded-full px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-wider
+                                            bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-900 shadow">
+                                    oferta especial
+                                </span>
+                                </div>
+
+                                <!-- preço -->
+                                <div class="mt-5 text-center">
+                                <p class="text-sm text-white/60">De: <span class="line-through font-semibold">R$ 597,00</span></p>
+                                <p class="mt-2 text-sm font-bold text-violet-300">Por apenas:</p>
+                                <div class="mt-1 flex items-end justify-center gap-1">
+                                    <span class="text-5xl sm:text-6xl text-yellow-400 font-extrabold">R$ 97</span>
+                                    <span class="text-2xl sm:text-3xl text-yellow-400 font-extrabold">,00</span>
+                                </div>
+                                <p class="mt-2 text-emerald-400 text-sm font-semibold">83% de desconto</p>
+                                <p class="mt-1 text-xs text-white/60">Pagamento único • Sem mensalidades</p>
+                                </div>
+
+                                <!-- CTA -->
+                                <a href="https://pay.kiwify.com.br/qj4nmL0"
+                                class="mt-6 group inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4
+                                        bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600
+                                        shadow-md shadow-indigo-900/30 transition hover:brightness-110
+                                        focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-400/60">
+                                <span class="text-lg">🚀</span>
+                                <span class="whitespace-nowrap text-base sm:text-lg font-extrabold tracking-wide uppercase">
+                                    Garantir minha vaga agora
+                                </span>
+                                </a>
+
+                                <!-- Garantia -->
+                                <div class="mt-5 rounded-xl bg-white/5 p-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="grid place-items-center h-10 w-10 rounded-lg bg-amber-400/20 ring-1 ring-amber-300/30">
+                                    <!-- medalha -->
+                                    <svg viewBox="0 0 24 24" class="h-6 w-6 text-amber-300" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 3l2 4 4 .5-3 3 .7 4L12 13l-3.7 1.5.7-4-3-3 4-.5 2-4Z"/>
+                                        <path d="M8 16v5l4-2 4 2v-5"/>
+                                    </svg>
+                                    </div>
+                                    <div>
+                                    <p class="font-semibold text-[15px] text-violet-200">Garantia incondicional de 7 dias</p>
+                                    <p class="text-xs text-white/70">Se não amar o conteúdo, devolvemos 100% do seu dinheiro.</p>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <!-- Formas de pagamento -->
+                                <div class="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-white/60">
+                                <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/5 border border-white/10">PIX</span>
+                                <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/5 border border-white/10">Cartão de Crédito</span>
+                                <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/5 border border-white/10">Boleto</span>
+                                <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/5 border border-white/10">Parcelamento</span>
+                                </div>
+
+                                <!-- Aviso -->
+                                <p class="mt-5 text-center text-[12px] text-white/55">
+                                Acesso liberado imediatamente após a confirmação do pagamento.
+                                </p>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </section>
-
+            </div>
         </section>
+
     </main>
-     <!-- FOOTER colado -->
+    <!-- FOOTER colado -->
     <footer class="bg-slate-950 mt-auto py-5 text-center text-slate-500 text-xs">
         © 2025 • Todos os direitos reservados.
     </footer>
