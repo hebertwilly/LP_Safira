@@ -82,7 +82,7 @@
 
                 <!-- COLUNA DIREITA (FOTO MAIOR) -->
                 <div class="lg:col-span-5 flex justify-center lg:justify-end">
-                    <img src="./imgs/safira.png" alt="Safira Sales"
+                    <img src="./imgs/Design sem nome (33).png" alt="Safira Sales"
                         class="refresh-animate w-[250px] sm:w-[300px] md:w-[350px] lg:w-[420px] object-contain drop-shadow-[0_24px_72px_rgba(0,0,0,.55)]" />
                 </div>
                 </div>
@@ -430,73 +430,79 @@
                     </div>
                 </div>
 
-                <!-- CARDS: 4 itens responsivos (1 → 2 → 4 colunas) -->
-                <div class="mt-10 grid gap-6 md:gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+               <!-- CARDS: imagem em cima, conteúdo abaixo (1→2→4 colunas) -->
+                <div class="mt-10 grid gap-6 md:gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-stretch">
                     <!-- CARD 1 -->
-                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
+                    <article class="elemento h-full flex flex-col rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
                         <div aria-hidden="true"
                             class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rotate-45 rounded-xl
                                     bg-gradient-to-br from-amber-300/20 via-fuchsia-400/15 to-violet-500/10"></div>
 
-                        <div class="flex items-center gap-4">
+                        <!-- Imagem (topo) -->
+                        <div class="w-full aspect-[16/10] rounded-xl bg-slate-800/40 flex items-center justify-center overflow-hidden">
                         <img src="./imgs/cristaisproperidade-removebg-preview.png" alt="E-book Guia de Cristais"
-                            class="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
-                        <div>
-                            <h3 class="text-sm sm:text-lg font-semibold">E-book: Guia de Cristais</h3>
-                            <p class="mt-1 text-xs sm:text-sm text-white/70">
-                            Manual prático para usar cristais e atrair prosperidade.
-                            </p>
-                        </div>
+                            class="max-h-full max-w-full object-contain" />
                         </div>
 
+                        <!-- Texto -->
+                        <div class="mt-4 flex-1">
+                        <h3 class="text-base sm:text-lg font-semibold">E-book: Guia de Cristais</h3>
+                        <p class="mt-1 text-xs sm:text-sm text-white/70 line-clamp-3">
+                            Manual prático para usar cristais e atrair prosperidade.
+                        </p>
+                        </div>
+
+                        <!-- Rodapé (alinhado) -->
                         <div class="mt-4">
-                            <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
-                                        bg-amber-400/20 text-amber-300 ring-1 ring-amber-300/30">
-                                De R$100 por R$00,00
-                            </span>
+                        <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
+                                    bg-amber-400/20 text-amber-300 ring-1 ring-amber-300/30">
+                            De R$100 por R$00,00
+                        </span>
                         </div>
                     </article>
 
                     <!-- CARD 2 -->
-                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
+                    <article class="elemento h-full flex flex-col rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
                         <div aria-hidden="true"
                             class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rotate-45 rounded-xl
                                     bg-gradient-to-br from-violet-400/20 via-fuchsia-400/15 to-indigo-500/10"></div>
 
-                        <div class="flex items-center gap-4">
+                        <div class="w-full aspect-[16/10] rounded-xl bg-slate-800/40 flex items-center justify-center overflow-hidden">
                         <img src="./imgs/osarquetipos-removebg-preview.png" alt="7 Arquétipos da Mulher Próspera"
-                            class="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
-                        <div>
-                            <h3 class="text-sm sm:text-lg font-semibold">7 Arquétipos da Mulher Próspera</h3>
-                            <p class="mt-1 text-xs sm:text-xs text-white/70">
-                            Descubra seu arquétipo e potencialize sua prosperidade.
-                            </p>
+                            class="max-h-full max-w-full object-contain" />
                         </div>
+
+                        <div class="mt-4 flex-1">
+                        <h3 class="text-base sm:text-lg font-semibold">7 Arquétipos da Mulher Próspera</h3>
+                        <p class="mt-1 text-xs sm:text-sm text-white/70 line-clamp-3">
+                            Descubra seu arquétipo e potencialize sua prosperidade.
+                        </p>
                         </div>
 
                         <div class="mt-4">
                         <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
-                                    bg-violet-400/20 text-violet-300 ring-1 ring-violet-300/30">
+                                    bg-amber-400/20 text-amber-300 ring-1 ring-amber-300/30">
                             De R$100 por R$00,00
                         </span>
                         </div>
                     </article>
 
                     <!-- CARD 3 -->
-                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
+                    <article class="elemento h-full flex flex-col rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
                         <div aria-hidden="true"
                             class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rotate-45 rounded-xl
                                     bg-gradient-to-br from-fuchsia-400/20 via-violet-400/15 to-indigo-500/10"></div>
 
-                        <div class="flex items-center gap-4">
-                        <img src="./imgs/reprogramação-removebg-preview.png" alt="Hotseat Ao Vivo Exclusivo"
-                            class="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
-                        <div>
-                            <h3 class="text-sm sm:text-lg font-semibold">Reprogramação do Subconciente</h3>
-                            <p class="mt-1 text-xs sm:text-sm text-white/70">
-                                Um áudio transformador que alinha seus pensamentos com a energia da abundância.
-                            </p>
+                        <div class="w-full aspect-[16/10] rounded-xl bg-slate-800/40 flex items-center justify-center overflow-hidden">
+                        <img src="./imgs/reprogramação-removebg-preview.png" alt="Reprogramação do Subconsciente"
+                            class="max-h-full max-w-full object-contain" />
                         </div>
+
+                        <div class="mt-4 flex-1">
+                        <h3 class="text-base sm:text-lg font-semibold">Reprogramação do Subconsciente</h3>
+                        <p class="mt-1 text-xs sm:text-sm text-white/70 line-clamp-3">
+                            Um áudio transformador que alinha seus pensamentos com a energia da abundância.
+                        </p>
                         </div>
 
                         <div class="mt-4">
@@ -507,28 +513,29 @@
                         </div>
                     </article>
 
-                    <!-- CARD 4 (novo) -->
-                    <article class="elemento rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
+                    <!-- CARD 4 -->
+                    <article class="elemento h-full flex flex-col rounded-2xl border border-white/10 bg-slate-900/60 p-6 relative overflow-hidden">
                         <div aria-hidden="true"
                             class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rotate-45 rounded-xl
                                     bg-gradient-to-br from-fuchsia-400/20 via-violet-400/15 to-indigo-500/10"></div>
 
-                        <div class="flex items-center gap-4">
+                        <div class="w-full aspect-[16/10] rounded-xl bg-slate-800/40 flex items-center justify-center overflow-hidden">
                         <img src="./imgs/aulabonus-removebg-preview.png" alt="Hotseat Ao Vivo Exclusivo"
-                            class="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
-                        <div>
-                            <h3 class="text-sm sm:text-lg font-semibold">Hotseat Ao Vivo Exclusivo</h3>
-                            <p class="mt-1 text-xs sm:text-sm text-white/70">
-                            Sessão ao vivo para tirar dúvidas e acelerar seus resultados.
-                            </p>
-                        </div>
+                            class="max-h-full max-w-full object-contain" />
                         </div>
 
-                        <div class="mt-4">
-                        <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
-                                    bg-fuchsia-400/20 text-fuchsia-300 ring-1 ring-fuchsia-300/30">
-                            Leve de brinde !
-                        </span>
+                        <div class="mt-4 flex-1">
+                        <h3 class="text-base sm:text-lg font-semibold">Hotseat Ao Vivo Exclusivo</h3>
+                        <p class="mt-1 text-xs sm:text-sm text-white/70 line-clamp-3">
+                            Sessão ao vivo para tirar dúvidas e acelerar seus resultados.
+                        </p>
+                        </div>
+
+                        <div class="mt-[18px]">
+                            <span class="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold
+                                        bg-fuchsia-400/20 text-fuchsia-300 ring-1 ring-fuchsia-300/30">
+                                Leve de brinde !
+                            </span>
                         </div>
                     </article>
                 </div>
@@ -594,9 +601,10 @@
                         <div class="mt-6 rounded-xl border border-violet-400/20 bg-gradient-to-r from-violet-500/10 via-fuchsia-500/10 to-indigo-500/10 p-4 sm:p-5">
                             <p class="text-sm font-semibold text-violet-200 uppercase tracking-wide">Bônus inclusos</p>
                             <ul class="mt-3 space-y-2 text-sm text-white/80">
-                            <li>• E-book: Guia Completo de Cristais</li>
-                            <li>• Os 7 Arquétipos da Mulher Próspera</li>
-                            <li>• Hotseat ao vivo (vagas limitadas)</li>
+                                <li>• E-book: Guia Completo de Cristais</li>
+                                <li>• Os 7 Arquétipos da Mulher Próspera</li>
+                                <li>• Reprogramação do Subconciente</li>
+                                <li>• Hotseat ao vivo (vagas limitadas)</li>
                             </ul>
                         </div>
                         </div>

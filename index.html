@@ -36,42 +36,21 @@
             </div>
         </header>
 
-        <!-- PLAYER -->
-        <section class="mt-10 sm:mt-10">
-            <div class="mx-auto max-w-[980px] px-4 sm:px-6">
-                <div class="mx-auto w-full max-w-[1050px] rounded-xl overflow-hidden player-surface">
-                <div class="aspect-video relative">
-                    <!-- OVERLAY -->
-                    <div id="vimeo-unmute" class="flex items-end absolute inset-0" style="z-index:5">
-                        <span 
-                            id="btn-som"
-                            class="absolute bottom-3 right-3 cursor-pointer inline-flex items-center justify-center 
-                                    w-10 h-10 rounded-full bg-black/70 hover:bg-black/60 text-white 
-                                    shadow-md transition-opacity duration-500 ease-in-out
-                                    opacity-100"
-                            style="z-index:5"
-                            >
-                            <!-- Ícone MUTED -->
-                            <svg id="icon-mute" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M5 9v6h4l5 5V4L9 9H5z"></path>
-                                <line x1="5" y1="19" x2="19" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
-                            </svg>
-                        </span>
-                    </div>
+       <section class="mx-auto mt-6 md:mt-8 px-4">
+            <div class="relative mx-auto max-w-[720px] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 bg-black/60 backdrop-blur-sm">
+                <div class="aspect-video">
+                <vturb-smartplayer
+                    id="vid-68a65207bbcb512da47ba61f"
+                    class="block w-full h-full"
+                ></vturb-smartplayer>
 
-                    <iframe
-                    id="vimeo-player"
-                    src="https://player.vimeo.com/video/1113399111?autoplay=1&muted=1&controls=0&title=0&byline=0&portrait=0&autopause=0&playsinline=1&dnt=1"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                    style="width:100%;height:100%;border:0;background:#000"
-                    title="VSL"></iframe>
-                </div>
+                <!-- Escudo para bloquear qualquer interação (clique/tap) no player -->
+                <div id="shield-vid-68a65207bbcb512da47ba61f"
+                    class="pointer-events-auto absolute inset-0 z-10"
+                    aria-hidden="true"></div>
                 </div>
             </div>
         </section>
-
         <!-- SELINHOS -->
         <section class="mt-8 sm:mt-10 pb-10">
             <div class="mx-auto max-w-[1160px] px-4 sm:px-6">
@@ -91,7 +70,8 @@
         © 2025 • Todos os direitos reservados.
     </footer>
 
-    <script src="https://player.vimeo.com/api/player.js" defer></script>
-    <script src="./script.js" defer></script>
+    <script src="https://scripts.converteai.net/lib/player.js"></script>
+    <script src="./timervsl.js" defer></script>
+    <script src="./script.js"></script>
 </body>
 </html>
