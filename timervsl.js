@@ -1,4 +1,8 @@
- // Sempre que a página carregar, limpa qualquer dado do VTurb
+ const botaoLp = document.getElementById("container-button")
+ const mainOculta = document.getElementById("main-oculta");
+ const section_quemE = document.getElementById("quem-e");
+
+// Sempre que a página carregar, limpa qualquer dado do VTurb
   try {
     const mustWipe = (k) =>
       /vt|vsl|converteai|player|resume|68a65207bbcb512da47ba61f/i.test(k);
@@ -25,7 +29,16 @@
     document.head.appendChild(s);
 })();
 
- 
 setTimeout(() => {
-    window.location.href = "./planos.html";
-}, 155000); // 2min35s
+    botaoLp.classList.remove("hidden");
+}, 30000);
+
+botaoLp.addEventListener("click", () => {
+  mainOculta.classList.remove("hidden");
+  section_quemE.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  // reativa o scroll reveal
+  if (typeof window.srRefresh === "function") {
+    window.srRefresh();
+  }
+});

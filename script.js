@@ -85,21 +85,14 @@
 })();
 
 /* ====================================================
-   Scroll reveal com IntersectionObserver
+   Scroll reveal com IntersectionObserver (versão com refresh)
    ==================================================== */
 (function scrollReveal(){
   const selector = '.elemento, #skillsTrack .reveal';
 
-  // estado inicial apenas para o que começa fora da viewport
   const prime = (el) => {
     const r = el.getBoundingClientRect();
     if (r.top >= window.innerHeight * 0.98) el.classList.add('sr-init');
-  };
-
-  const applyToNodeAndChildren = (node) => {
-    if (node.nodeType !== 1) return;
-    if (node.matches?.(selector)) { prime(node); io.observe(node); }
-    node.querySelectorAll?.(selector).forEach(el => { prime(el); io.observe(el); });
   };
 
   const onEnter = (entry) => {
@@ -115,19 +108,14 @@
     rootMargin: '0px 0px -10% 0px'
   });
 
-  // aplica nos existentes
-  document.querySelectorAll(selector).forEach(el => { prime(el); io.observe(el); });
+  // função que aplica observer a todos os elementos alvo
+  const bindAll = () => {
+    document.querySelectorAll(selector).forEach(el => {
+      prime(el);
+      io.observe(el);
+    });
+  };
 
-  // observa grids que recebem itens dinamicamente
-  ['#gridDev','#gridDesign'].forEach(sel=>{
-    const node = document.querySelector(sel);
-    if(!node) return;
-    new MutationObserver((ms)=>{
-      ms.forEach(m => m.addedNodes.forEach(applyToNodeAndChildren));
-    }).observe(node, { childList:true, subtree:true });
-  });
-
-  // pós navegação por âncora / resize
   const revealNow = () => {
     document.querySelectorAll('.sr-init').forEach(el=>{
       const r = el.getBoundingClientRect();
@@ -137,6 +125,27 @@
       }
     });
   };
+
+  // aplica nos existentes
+  bindAll();
+
+  // expõe refresh público pra usar no timervsl.js
+  window.srRefresh = () => { bindAll(); requestAnimationFrame(revealNow); };
+
+  // observa grids dinâmicos
+  ['#gridDev','#gridDesign'].forEach(sel=>{
+    const node = document.querySelector(sel);
+    if(!node) return;
+    new MutationObserver((ms)=>{
+      ms.forEach(m => m.addedNodes.forEach(node=>{
+        if (node.nodeType !== 1) return;
+        if (node.matches?.(selector)) { prime(node); io.observe(node); }
+        node.querySelectorAll?.(selector).forEach(el => { prime(el); io.observe(el); });
+      }));
+    }).observe(node, { childList:true, subtree:true });
+  });
+
+  // pós navegação por âncora / resize
   window.addEventListener('hashchange', () => requestAnimationFrame(revealNow));
   window.addEventListener('load', revealNow, { once:true });
   window.addEventListener('orientationchange', () => setTimeout(revealNow, 200));
