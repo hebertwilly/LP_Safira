@@ -12,6 +12,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles.css" />
     <meta name="robots" content="index, follow" />
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1137245421618498');  
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1137245421618498&ev=PageView&noscript=1"/>
+    </noscript>
   </head>
   <body class="bg-slate-950 text-white overflow-x-clip">
     <!-- HEADER / HERO -->
@@ -274,7 +290,8 @@
                 <a
                   href="https://pay.kiwify.com.br/qj4nmL0"
                   class="elemento group relative inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-2xl px-5 sm:px-8 py-4 font-extrabold tracking-wide uppercase text-white bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 shadow-xl shadow-indigo-900/30 transition hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-400/60"
-                >
+                  onclick="fbq('track', 'Purchase')"
+                  >
                   <span
                     aria-hidden
                     class="pointer-events-none absolute inset-x-0 -top-1 h-1/2 rounded-2xl bg-white/10 blur-[2px]"
@@ -639,6 +656,7 @@
                 <a
                   href="https://pay.kiwify.com.br/qj4nmL0"
                   class="mt-5 lg:ml-[50px] lg:mt-10 sm:mt-6 group relative inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-2xl px-5 sm:px-8 py-4 font-extrabold tracking-wide uppercase text-white bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 shadow-xl shadow-indigo-900/30 transition hover:brightness-110"
+                  onclick="fbq('track', 'Purchase')"
                 >
                   <span
                     aria-hidden
@@ -682,6 +700,7 @@
               <a
                 href="https://pay.kiwify.com.br/qj4nmL0"
                 class="inline-flex items-center justify-center gap-2 rounded-xl px-5 sm:px-6 py-3.5 sm:py-4 bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 shadow-md shadow-indigo-900/30 hover:brightness-110"
+                onclick="fbq('track', 'Purchase')"
               >
                 <span class="text-lg">🚀</span>
                 <span
@@ -979,6 +998,7 @@
                   <a
                     href="https://pay.kiwify.com.br/qj4nmL0"
                     class="mt-6 group inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 shadow-md shadow-indigo-900/30 hover:brightness-110"
+                    onclick="fbq('track', 'Purchase')"
                   >
                     <span class="text-lg">🚀</span>
                     <span
