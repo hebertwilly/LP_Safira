@@ -23,10 +23,10 @@
 
 
 (function () {
-    var s = document.createElement("script");
-    s.src = "https://scripts.converteai.net/f3f370c3-9189-41a9-b332-a47b34ffad25/players/68a65207bbcb512da47ba61f/v4/player.js";
-    s.async = true;
-    document.head.appendChild(s);
+     var s = document.createElement("script");
+     s.src = "https://scripts.converteai.net/f3f370c3-9189-41a9-b332-a47b34ffad25/players/68becc477064404dd938afa6/v4/player.js";
+     s.async = true;
+     document.head.appendChild(s);
 })();
 
 setTimeout(() => {
