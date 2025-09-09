@@ -31,7 +31,7 @@
 
 setTimeout(() => {
     botaoLp.classList.remove("hidden");
-}, 30000);
+}, 115000);
 
 botaoLp.addEventListener("click", () => {
   mainOculta.classList.remove("hidden");
