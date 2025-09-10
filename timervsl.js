@@ -1,6 +1,6 @@
  const botaoLp = document.getElementById("container-button")
  const mainOculta = document.getElementById("main-oculta");
- const section_quemE = document.getElementById("quem-e");
+ const section_quemE = document.getElementById("problema");
 
 // Sempre que a página carregar, limpa qualquer dado do VTurb
   try {
@@ -23,15 +23,15 @@
 
 
 (function () {
-     var s = document.createElement("script");
-     s.src = "https://scripts.converteai.net/f3f370c3-9189-41a9-b332-a47b34ffad25/players/68becc477064404dd938afa6/v4/player.js";
-     s.async = true;
+     var s=document.createElement("script"); 
+     s.src="https://scripts.converteai.net/f3f370c3-9189-41a9-b332-a47b34ffad25/players/68c163c28e6e49ba0b4ff664/v4/player.js";
+     s.async=!0
      document.head.appendChild(s);
 })();
 
 setTimeout(() => {
     botaoLp.classList.remove("hidden");
-}, 115000);
+}, 220000);
 
 botaoLp.addEventListener("click", () => {
   mainOculta.classList.remove("hidden");
